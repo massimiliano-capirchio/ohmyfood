@@ -1,0 +1,428 @@
+/*-----------------------*/
+/* ==  COLOR CODES ==   */
+/*---------------------*/
+/*
+Couleur Material Design
+Icon Font-Awesome
+
+Green (header, footer and button prochainement) : #579c87
+Orange (logo, links: footer and button coming soon) : #fdcb46
+Pink (background menu la note enchantée) : #FCDFDB
+Maroon (titres h2 et h3 menu la note enchantée) : #3C1218
+Red (icones menu la note enchantée) : #FF4300
+Light blue (background menu le délice des papilles) : #F9F9F9
+Blue (dégradé titre menu le délice des papille) #0228dd, #0670f3, #229df9
+Blue (titre h3 menu le délice des papilles) : #0670f3
+Light pink (background menu le chic à la française) : #FFF5FE
+Maroon/purple (dégradé titre menu le chic à la française) #c77412, #7738cf, #6E4CCC 
+Maroon (titre h3 le chic à la française) : #C77412
+light green (background menu la palette du goût) : #FDFDFD
+Green (dégradé titre menu la palette du goût) : #aed581, #4d891e
+Green (titre h3 la palette du goût) : #4d891e
+*/
+
+
+/*---------------------------*/
+/* ==  DEFINITIONS POLICES  */
+/*-------Google fonts------*/
+
+
+/* police d'ecriture pour menu le chic à la française */
+@font-face {
+    font-family: 'dancing_script_otregular';
+    src: url('../fonts/dancing/dancingscript-regular-webfont.woff2') format('woff2'),
+         url('../fonts/dancing/dancingscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* police d'ecriture pour menu la note enchantée */
+@font-face {
+    font-family: 'arizoniaregular';
+    src: url('../fonts/arizonia/arizonia-regular-webfont.woff2') format('woff2'),
+         url('../fonts/arizonia/arizonia-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* police d'ecriture pour menu le délice des papilles */
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('../fonts/alexbrush/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('../fonts/alexbrush/alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* police d'ecriture pour menu les papilles du goût */
+@font-face {
+    font-family: 'aguafina_scriptregular';
+    src: url('../fonts/aguafina/aguafinascript-regular-webfont.woff2') format('woff2'),
+         url('../fonts/aguafina/aguafinascript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{    
+    height : auto;
+    width : 100%;
+    margin : 0;
+    display: flex;
+    flex-direction: column;
+}
+a:link{
+    text-decoration: none;
+}
+header{
+    background-color: #579c87;
+    height: 150px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+    transform: translateY(40%);
+    color: #fdcb46;
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #579c87;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;    
+}
+footer a{
+    color: #fdcb46;
+    font-size: 30px;
+    margin: 20px;
+}
+footer a:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+@keyframes shake{
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.btn{
+    background-color: #579c87;
+    height: 80px;
+    width: 450px;
+    border-radius: 10px;
+    margin: auto auto 150px auto;    
+}
+.btn a{
+    color: #fdcb46;
+    font-size: 50px;
+    display: block;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* effet sur le boutton prochainement */
+.loading{
+    margin: 20px;
+    font-size: 36px;
+    font-family: sans-serif;
+}
+.loading:after {
+    display: inline-block;
+    animation: dotty steps(1,end) 1s infinite;
+    content: '';
+}
+@keyframes dotty {
+0%   { content: ''; }
+25%  { content: '.'; }
+50%  { content: '..'; }
+75%  { content: '...'; }
+100% { content: ''; }
+}
+.container-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* effet de zoom sur les menus */
+.menu{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.menu:hover{
+	-webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transform-style: opacity (80%);
+    opacity: .5;
+}
+/* menu la note enchantée */
+.menu_LNE{
+    font-family: 'arizoniaregular', Arial, Helvetica, sans-serif;
+    height: 600px;
+    width: 500px;
+    margin: 60px;
+    text-align: center;
+    font-size: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FCDFDB;
+    box-shadow: 0 0.9px 2.4px rgba(0, 0, 0, 0.016), 0 2.2px 6px rgba(0, 0, 0, 0.022), 0 4.4px 12.2px rgba(0, 0, 0, 0.028), 0 9.1px 25.2px rgba(0, 0, 0, 0.034), 0 25px 69px rgba(0, 0, 0, 0.05);
+}
+.menu_LNE h2{
+    color: #3C1218;
+}
+.menu_LNE h3{
+    color: #3C1218;
+}
+.fa-music{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    color: #FF4300;
+    margin-bottom: 30px;
+}
+/* menu les délices des papilles */
+.menu_LDDP{    
+    font-family: 'alex_brushregular', Arial, Helvetica, sans-serif;
+    height: 600px;
+    width: 500px;
+    margin: 60px;
+    text-align: center;
+    font-size: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F9F9F9;
+    box-shadow: 0 0.9px 2.4px rgba(0, 0, 0, 0.016), 0 2.2px 6px rgba(0, 0, 0, 0.022), 0 4.4px 12.2px rgba(0, 0, 0, 0.028), 0 9.1px 25.2px rgba(0, 0, 0, 0.034), 0 25px 69px rgba(0, 0, 0, 0.05);
+}
+/* effet de dégradé sur le titre */
+.menu_LDDP h2{
+    background: linear-gradient(to right, #0228dd 0%, #0670f3 40%,#229df9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu_LDDP h3{
+    color: #0670f3;
+}
+/* menu le chic à la française */
+.menu_LCALF{
+    font-family: 'dancing_script_otregular', Arial, Helvetica, sans-serif;
+    height: 600px;
+    width: 500px;
+    margin: 60px;
+    text-align: center;
+    font-size: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFF5FE;
+    box-shadow: 0 0.9px 2.4px rgba(0, 0, 0, 0.016), 0 2.2px 6px rgba(0, 0, 0, 0.022), 0 4.4px 12.2px rgba(0, 0, 0, 0.028), 0 9.1px 25.2px rgba(0, 0, 0, 0.034), 0 25px 69px rgba(0, 0, 0, 0.05);
+}
+/* effet de dégradé sur le titre */
+.menu_LCALF h2{
+    margin-top: 80px;
+    background: linear-gradient(to right, #c77412 0%, #7738cf 80%, #6E4CCC  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu_LCALF h3{
+    color: #C77412;
+}
+/* menu les papilles du goût */
+.menu_LPDG{
+    font-family: 'aguafina_scriptregular', Arial, Helvetica, sans-serif;
+    height: 600px;
+    width: 500px;
+    margin: 60px;
+    text-align: center;
+    font-size: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FDFDFD;
+    box-shadow: 0 0.9px 2.4px rgba(0, 0, 0, 0.016), 0 2.2px 6px rgba(0, 0, 0, 0.022), 0 4.4px 12.2px rgba(0, 0, 0, 0.028), 0 9.1px 25.2px rgba(0, 0, 0, 0.034), 0 25px 69px rgba(0, 0, 0, 0.05);
+}
+/* effet de dégradé sur le titre */
+.menu_LPDG h2{
+    background: linear-gradient(to left,  #aed581 0%, #4d891e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.menu_LPDG h3{
+    color: #4d891e;
+}
+
+@media only screen and (max-width: 320px){  
+
+    header{
+        width: 100%;
+    }    
+    .menu_LNE, .menu_LDDP, .menu_LCALF, .menu_LPDG{       
+        height: 300px;
+        width: 240px;   
+        font-size: 18px;         
+    }
+    .menu_LDDP{
+        margin-bottom: 0px;
+    }
+    .menu_LCALF h2{  
+        margin-top: -20px;
+    }
+    footer{
+        justify-content: space-between;
+    }
+    footer a{
+        font-size: 15px;       
+    }
+    .btn{        
+        height: 65px;
+        width: 250px;        
+    }
+    .btn a{        
+        font-size: 22px;        
+    }
+    .contact{
+        margin-right: 30px;
+    }
+}
+
+/* very small screens */
+@media only screen and (min-width: 321px) and (max-width: 424px){    
+
+    header{
+        width: 100%;
+    }
+    footer a{
+        font-size: 15px;       
+    }
+    .menu_LNE, .menu_LDDP, .menu_LCALF, .menu_LPDG{       
+        height: 300px;
+        width: 240px;   
+        font-size: 18px;         
+    }
+    .menu_LDDP{
+        margin-bottom: 0px;
+    }
+    .menu_LCALF h2{  
+        margin-top: -20px;
+    }
+    .btn{        
+        height: 65px;
+        width: 250px;        
+    }
+    .btn a{        
+        font-size: 22px;        
+    }
+}
+
+/* small screens */
+@media only screen and (min-width: 425px) and (max-width: 767px){    
+
+    .menu_LNE, .menu_LDDP, .menu_LCALF, .menu_LPDG{       
+        height: 300px;
+        width: 240px;   
+        font-size: 18px;         
+    }
+    .menu_LCALF h2{  
+        margin-top: -20px;
+    }
+    footer a{
+        font-size: 15px;       
+    }
+    .btn{        
+        height: 65px;
+        width: 250px;        
+    }
+    .btn a{        
+        font-size: 22px;        
+    }
+    footer a{
+        font-size: 15px;   
+    }
+    .menu_LDDP{
+        margin-bottom: 0px;
+    }    
+}
+
+/* wide screens */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+    .menu_LNE, .menu_LDDP, .menu_LCALF, .menu_LPDG{       
+        height: 300px;
+        width: 240px;   
+        font-size: 18px;         
+    }
+    .menu_LDDP{
+        margin-bottom: 0px;
+    }
+    .menu_LCALF h2{  
+        margin-top: 50px;
+    }
+    footer a{
+        font-size: 20px;
+    }
+    .btn{        
+        height: 65px;
+        width: 250px;        
+    }
+    .btn a{        
+        font-size: 22px;        
+    }
+    .fa-music{
+        margin-top: -25px;
+    }
+}
+
+/* widescreen monitors */
+@media only screen and (min-width: 1024px) and (max-width: 1920px){
+
+    .menu_LNE, .menu_LDDP, .menu_LCALF, .menu_LPDG{       
+        height: 500px;
+        width: 380px;   
+        font-size: 25px;         
+    }
+    .menu_LDDP{
+        margin-bottom: 0px;
+    }
+    .menu_LCALF h2{  
+        margin-top: 50px;
+    }
+}
+
+/* super widescreen monitors */
+@media only screen and (min-width: 1921px){
+
+    .menu_LNE, .menu_LDDP, .menu_LCALF, .menu_LPDG{       
+        height: 500px;
+        width: 440px;   
+        font-size: 30px;         
+    }
+    .menu_LDDP{
+        margin-bottom: 0px;
+    }
+    .menu_LCALF h2{  
+        margin-top: 50px;
+    }
+}
