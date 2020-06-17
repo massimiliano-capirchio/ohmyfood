@@ -389,20 +389,20 @@ li span{
 @media only screen and (min-width: 768px) and (max-width: 1023px){
 
     .carte{
-        width: 650px;
+        width: 700px;
     } 
     #st1{       
-        margin-left: 60px;
+        margin-left: 20px;
         width: 120px;
         font-size: 38px;
     }    
     #st2{        
-        margin-left: 70px; 
+        margin-left: 40px; 
         width: 200px;
         font-size: 38px;
     }
     #st3{ 
-        margin-left: 50px;
+        margin-left: 20px;
         width: 250px;
         font-size: 38px;
     }
@@ -432,11 +432,11 @@ li span{
     }            
     p{ 
         margin-left: 20px;
-        font-size: 30px;
+        font-size: 24px;
     }
     li span{
         font-size: 24px;
-        margin-top: -55px;
+        margin-top: -50px;
         margin-right: 20px;
     }    
 }
@@ -445,54 +445,54 @@ li span{
 @media only screen and (min-width: 1024px) and (max-width: 1920px){
 
     .carte{
-        width: 1200px;
+        width: 900px;
     }
     #st1{       
-        margin-left: 40px;
+        margin-left: 150px;
         width: 130px;
         font-size: 40px;
     }    
     #st2{        
-        margin-left: 30px; 
+        margin-left: 120px; 
         width: 200px;
         font-size: 40px;
     }
     #st3{ 
-        margin-left: 40px;
+        margin-left: 70px;
         width: 270px;
-        font-size: 38px;
+        font-size: 40px;
     }
     .img1{  
         width: 25%; 
-        margin: 0px 180px 0px 0px;
+        margin: 0px 0px 0px 20px;
     }
     .img2{
         width: 25%;
-        margin: 0px 0px 0px 180px;
+        margin: 0px 20px 0px 0px;
     }
     .img3{
         width: 25%;
-        margin: 0px 150px 0px 0px;
+        margin: 0px 0px 0px 20px;
     }
     .img4{
         width: 25%;
-        margin: 0px 0px 0px 150px;
+        margin: 0px 20px 0px 0px;
     }
     .img5{
         width: 25%;
-        margin: 0px 110px 0px 0px;
+        margin: 0px 0px 0px 20px;
     }
     .img6{
         width: 25%;
-        margin: 0px 0px 0px 110px;
+        margin: 0px 20px 0px 0px;
     }            
     p{ 
-        margin-left: 60px;
-        font-size: 34px;
+        margin-left: 20px;
+        font-size: 28px;
     }
     li span{
-        font-size: 34px;
-        margin-top: -65px;
+        font-size: 28px;
+        margin-top: -55px;
         margin-right: 60px;
     }    
 }
