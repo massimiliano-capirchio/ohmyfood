@@ -244,70 +244,67 @@ li span{
         width: 300px;        
     }
     #st1{ 
-        font-size: 17px;      
-        margin-left: 15px;
+        font-size: 18px;      
+        margin-left: 80px;
         margin-top: -10px;
         margin-bottom: 30px;
-        width: 1250px;
-        border: 1px solid black;
+        width: 1500px;
+        text-align: center;
     }
     #st2{    
         font-size: 18px; 
         margin-left: 90px; 
         margin-top: -10px;
         margin-bottom: 30px;
-        width: 2000px;
-        border: 1px solid black;
+        width: 1500px;
+        text-align: center;
     }
     #st3{ 
         font-size: 18px; 
         margin-left: 90px;
         margin-top: -10px;
         margin-bottom: 30px;
-        width: 2000px;
+        width: 1500px;
+        text-align: center;
     }
     .img1{  
-        width: 200%; 
+        width: 300%; 
         margin: 0px 0px 0px 20px;
     }
     .img2{
-        width: 200%;
+        width: 300%;
         margin: 0px 20px 0px 0px;
-        border: 1px solid black;
     }
     .img3{
-        width: 200%;
+        width: 300%;
         margin: 0px 0px 0px 20px;
     }
     .img4{
-        width: 200%;
+        width: 300%;
         margin: 0px 20px 0px 0px;
     }
     .img5{
-        width: 200%;
+        width: 300%;
         margin: 0px 0px 0px 20px;
     }
     .img6{
-        width: 200%;
+        width: 300%;
         margin: 0px 20px 0px 0px;
     }    
     p{        
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
         margin: 0px 20px 0px 20px;
     }
     li span{
-        font-size: 20px;
-        margin: -15px 150px 0px 0px;
+        font-size: 16px;
+        margin: -15px 130px 0px 0px;
     }
     .int h2{
         font-size: 30px;
         margin-top: 40px;
         margin-bottom: 60px;
-    }
-    h2{
-        font-size: 30px;
-    }
+    }    
     .titre-carte{
         font-size: 30px;
         margin-bottom: 0px;
