@@ -324,61 +324,61 @@ li span{
 @media only screen and (min-width: 425px) and (max-width: 767px){   
     
     .carte{
-        width: 450px;        
+        width: 400px;        
     }
     #st1{ 
         font-size: 20px; 
         margin-top: -10px; 
         margin-bottom: 50px;
         margin-left: 80px;
-        width: 800px;
+        width: 1200px;
     }
     #st2{    
         font-size: 20px; 
         margin-top: -5px;
         margin-bottom: 50px;
         margin-left: 90px;
-        width: 800px;
+        width: 1200px;
     }
     #st3{ 
         font-size: 20px; 
         margin-top: -5px;
         margin-bottom: 50px;
         margin-left: 100px;
-        width: 800px;
+        width: 1300px;
     }
     .img1{  
-        width: 100%; 
+        width: 200%; 
         margin: 0px 0px 0px 20px;
     }
     .img2{
-        width: 100%;
+        width: 200%;
         margin: 0px 20px 0px 0px;
     }
     .img3{
-        width: 100%;
+        width: 200%;
         margin: 10px 0px 0px 20px;
     }
     .img4{
-        width: 100%;
+        width: 200%;
         margin: 10px 20px 0px 0px;
     }
     .img5{
-        width: 100%;
+        width: 200%;
         margin: 10px 0px 0px 20px;
     }
     .img6{
-        width: 100%;
+        width: 200%;
         margin: 10px 20px 0px 0px;
     }      
     p{        
-        font-size: 24px;
+        font-size: 18px;
         text-align: center;
         margin: 0px 20px 0px 20px;
     }
     li span{
-        font-size: 24px;
-        margin: -15px 200px 0px 0px;
+        font-size: 18px;
+        margin: -15px 175px 0px 0px;
     }
     .int{
         margin-bottom: 60px;
@@ -404,79 +404,83 @@ li span{
 @media only screen and (min-width: 768px) and (max-width: 1023px){
 
     .carte{
-        width: 850px;
+        width: 700px;
     } 
     #st1{       
         margin-left: 80px;
-        width: 540px;
+        width: 850px;
         font-size: 40px;
     } 
     #st2{        
         margin-left: 100px; 
-        width: 520px;
+        width: 850px;
         font-size: 40px;  
     }
     #st3{        
         margin-left: 100px; 
-        width: 510px;
+        width: 840px;
         font-size: 40px; 
     }
     .img1{  
         width: 100%; 
-        margin: 0px 0px 0px 20px;
+        margin: -10px 0px 0px 20px;
     }
     .img2{
         width: 100%;
-        margin: 0px 20px 0px 0px;
+        margin: -10px 20px 0px 0px;
     }
     .img3{  
         width: 100%; 
-        margin: 0px 0px 0px 20px;
+        margin: -10px 0px 0px 20px;
     }
     .img4{
         width: 100%;
-        margin: 0px 20px 0px 0px;
+        margin: -10px 20px 0px 0px;
     }
     .img5{  
         width: 100%; 
-        margin: 0px 0px 0px 20px;
+        margin: -10px 0px 0px 20px;
     }
     .img6{
         width: 100%;
-        margin: 0px 20px 0px 0px;
+        margin: -10px 20px 0px 0px;
     }
     p{
-        font-size: 30px;       
+        font-size: 24px; 
+        margin-right: 25px; 
     }
     li span{      
-        margin-top: -60px;
-        margin-right: 40px;
-        font-size: 30px;       
+        margin-top: -50px;
+        margin-right: 25px;
+        font-size: 24px;       
     }   
     .titre-carte{       
         margin-bottom: 0px;       
     } 
+    .int h2{
+        font-size: 70px;
+    }
 }
 
 /* widescreen monitors */
 @media only screen and (min-width: 1024px) and (max-width: 1920px){
 
     .carte{
-        width: 1200px;
+        width: 900px;
     }
     #st1{       
         margin-left: 90px;
-        width: 440px;
+        width: 760px;
         font-size: 50px;
     }    
     #st2{        
         margin-left: 100px; 
-        width: 420px;
+        width: 760px;
         font-size: 50px;
     }
     #st3{ 
         margin-left: 110px;
-        width: 390px;
+        width: 720px;
         font-size: 50px;
     }
     .img1{  
@@ -505,11 +509,11 @@ li span{
     }            
     p{ 
         margin-left: 60px;
-        font-size: 34px;
+        font-size: 28px;
     }
     li span{
-        font-size: 34px;
-        margin-top: -65px;
+        font-size: 28px;
+        margin-top: -50px;
         margin-right: 60px;
     }    
 }
